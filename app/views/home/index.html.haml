@@ -1,0 +1,16 @@
+.container
+  - if current_user
+    %p
+      %h3 Welcome 
+      = link_to "Sign Out", signout_path, class: 'pull-right'
+    %br
+    %p
+      %h3
+        User Profile
+      %table.table
+        - current_user.profile.each do |key, value|
+          %tr
+            %td= key
+            %td= value
+  - else
+    = link_to "Sign in with Etsy", "/auth/etsy", class: 'btn btn-primary'
