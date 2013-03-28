@@ -8,6 +8,8 @@ gem 'thin'
 gem 'haml-rails'
 gem 'omniauth'
 gem 'omniauth-etsy'
+gem 'etsy'
+gem 'figaro'
 
 # Gems used only for assets and not required
 # in production environments by default.
